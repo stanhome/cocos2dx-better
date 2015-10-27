@@ -250,7 +250,6 @@
 		92731BCD195E896700D66FD2 /* tolua_to.c in Sources */ = {isa = PBXBuildFile; fileRef = 92731BA9195E896700D66FD2 /* tolua_to.c */; settings = {COMPILER_FLAGS = "-x c"; }; };
 		9273E5151995FA9F0012F6BF /* CCCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9273E5141995FA9F0012F6BF /* CCCount.cpp */; };
 		9276E0E718A732240045B318 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9276E0E618A732240045B318 /* StoreKit.framework */; };
-		9276E0F318A76B190045B318 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9276E0F218A76B190045B318 /* libpthread.dylib */; };
 		9276E10218A77A890045B318 /* CCAssetInputStream_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9276E10118A77A890045B318 /* CCAssetInputStream_ios.mm */; };
 		9276E10518A77E240045B318 /* CCAssetOutputStream_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9276E10418A77E240045B318 /* CCAssetOutputStream_ios.mm */; };
 		9276E10718A77F600045B318 /* CCImage_richlabel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9276E10618A77F600045B318 /* CCImage_richlabel.mm */; };
@@ -393,7 +392,6 @@
 		92F68E6E1855A7C800C97188 /* CCDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68E6B1855A7C800C97188 /* CCDatabase.cpp */; };
 		92F68E6F1855A7C800C97188 /* CCResultSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68E6C1855A7C800C97188 /* CCResultSet.cpp */; };
 		92F68E701855A7C800C97188 /* CCStatement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68E6D1855A7C800C97188 /* CCStatement.cpp */; };
-		92F68E751855A7F600C97188 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F68E741855A7F600C97188 /* libsqlite3.dylib */; };
 		92F68E8E1855ACE400C97188 /* CCJSONArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68E8A1855ACE400C97188 /* CCJSONArray.cpp */; };
 		92F68E8F1855ACE400C97188 /* CCJSONObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68E8B1855ACE400C97188 /* CCJSONObject.cpp */; };
 		92F68E901855ACE400C97188 /* CCJSONParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68E8C1855ACE400C97188 /* CCJSONParser.cpp */; };
@@ -439,6 +437,8 @@
 		92F68F381855BDE200C97188 /* CCSPXManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68F191855BDE200C97188 /* CCSPXManager.cpp */; };
 		92F68F391855BDE200C97188 /* CCSPXSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F68F1A1855BDE200C97188 /* CCSPXSprite.cpp */; };
 		92FBFFC618FD5C2900ADCF7E /* CCPinyinUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92FBFFC418FD5C2900ADCF7E /* CCPinyinUtils.cpp */; };
+		F67E99E51BDF264000254507 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F67E99E41BDF264000254507 /* libsqlite3.dylib */; };
+		F67E99E71BDF267000254507 /* libsystem_pthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F67E99E61BDF267000254507 /* libsystem_pthread.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1408,6 +1408,8 @@
 		92FBFFC518FD5C2900ADCF7E /* CCPinyinUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPinyinUtils.h; sourceTree = "<group>"; };
 		92FBFFC718FD68BE00ADCF7E /* ccUnicodeGBKTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ccUnicodeGBKTable.h; sourceTree = "<group>"; };
 		92FBFFC818FD69D600ADCF7E /* ccGBKUnicodeTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ccGBKUnicodeTable.h; sourceTree = "<group>"; };
+		F67E99E41BDF264000254507 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		F67E99E61BDF267000254507 /* libsystem_pthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsystem_pthread.dylib; path = ../../../../usr/lib/system/libsystem_pthread.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1423,9 +1425,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9276E0F318A76B190045B318 /* libpthread.dylib in Frameworks */,
+				F67E99E71BDF267000254507 /* libsystem_pthread.dylib in Frameworks */,
+				F67E99E51BDF264000254507 /* libsqlite3.dylib in Frameworks */,
 				9276E0E718A732240045B318 /* StoreKit.framework in Frameworks */,
-				92F68E751855A7F600C97188 /* libsqlite3.dylib in Frameworks */,
 				9255B8B518556E5400797255 /* OpenAL.framework in Frameworks */,
 				9255B8A918556DF000797255 /* AudioToolbox.framework in Frameworks */,
 				9255B8A718556DE400797255 /* AVFoundation.framework in Frameworks */,
@@ -2814,6 +2816,8 @@
 		92B516E616E86020009F3536 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F67E99E61BDF267000254507 /* libsystem_pthread.dylib */,
+				F67E99E41BDF264000254507 /* libsqlite3.dylib */,
 				92DFBC1016E860D00016648F /* cocos2dx.xcodeproj */,
 				9243BD2E18F96FEE0020966A /* CocosDenshion.xcodeproj */,
 				9276E0F218A76B190045B318 /* libpthread.dylib */,
@@ -3765,7 +3769,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -3784,7 +3788,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3811,6 +3815,10 @@
 					"$(SRCROOT)/../../cocos2d-x/extensions/**",
 					"$(PROJECT_DIR)/../cocos2dx-better/thirdparty/curl/include",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib/system,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "cocos2dx-better";
 				SKIP_INSTALL = YES;
@@ -3834,6 +3842,10 @@
 					"$(SRCROOT)/../../cocos2d-x/CocosDenshion/include",
 					"$(SRCROOT)/../../cocos2d-x/extensions/**",
 					"$(PROJECT_DIR)/../cocos2dx-better/thirdparty/curl/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib/system,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "cocos2dx-better";
